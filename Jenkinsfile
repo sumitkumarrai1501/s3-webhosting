@@ -3,15 +3,15 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET = 'project-frontend-bucket-10-11-25 '
+        S3_BUCKET = 'amzn-besant-demo-2 '
     }
 
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Amruta9993/Frontend-new-project.git',
-                    credentialsId: 'frontend'
+                    url: 'https://github.com/sumitkumarrai1501/s3-webhosting.git',
+                    credentialsId: 'ec2-user'
             }
         }
 
