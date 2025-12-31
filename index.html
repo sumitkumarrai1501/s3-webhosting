@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyToys | Kids Toy Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #ff6f91, #ff9671);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            height: 75vh;
+            background-image: url("https://images.unsplash.com/photo-1607082349566-187342175e2f");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 50px;
+            border-radius: 12px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            background: #ffde59;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero button:hover {
+            background: #ffd000;
+        }
+
+        /* PRODUCTS */
+        .section {
+            padding: 60px 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #ff6f91;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #28a745;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-info button {
+            background: #ff6f91;
+            border: none;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .product-info button:hover {
+            background: #ff4f7a;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🧸 HappyToys</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <h2>Fun Toys for Happy Kids</h2>
+        <p>Discover safe, colorful and educational toys your kids will love</p>
+        <button>Shop Now</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Popular Toys</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b" alt="Toy Car">
+            <div class="product-info">
+                <h3>Racing Car</h3>
+                <p class="price">₹799</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30" alt="Teddy Bear">
+            <div class="product-info">
+                <h3>Teddy Bear</h3>
+                <p class="price">₹1,199</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4d91e" alt="Blocks">
+            <div class="product-info">
+                <h3>Building Blocks</h3>
+                <p class="price">₹999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 HappyToys. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
